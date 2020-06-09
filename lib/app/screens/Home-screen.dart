@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import 'package:karee/app/entities/utils/Style.dart';
-import "package:karee/core/core.dart";
+import '../entities/utils/Style.dart';
+import "../../core/core.dart";
 
 /*
  * @Author Champlain Marius Bakop
