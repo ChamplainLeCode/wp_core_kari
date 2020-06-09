@@ -1,4 +1,4 @@
-import 'package:karee/core/routes/Router.dart';
+import '../../core/core.dart';
 
 /*
  * @Author Champlain Marius Bakop
