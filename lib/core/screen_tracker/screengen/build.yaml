@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      screengen|screen_tracker:
+        enabled: true
+builders:
+  screen_tracker:
+    target: ":screengen"
+    import: "package:karee/core/screen_tracker/screengen/lib/builder.dart"
+    builder_factories: ["screenTracker"]
+    build_extensions: {".dart": [".kari"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
