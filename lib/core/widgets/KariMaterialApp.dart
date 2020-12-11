@@ -37,7 +37,6 @@ class KariMaterialApp extends StatelessWidget {
   final bool showSemanticsDebugger;
   final bool debugShowCheckedModeBanner;
   final Map<LogicalKeySet, Intent> shortcuts;
-  final Map<LocalKey, ActionFactory> actions;
   final bool debugShowMaterialGrid;
 
 
@@ -66,8 +65,7 @@ class KariMaterialApp extends StatelessWidget {
     this.checkerboardOffscreenLayers = false,
     this.showSemanticsDebugger = false,
     this.debugShowCheckedModeBanner = true,
-    this.shortcuts,
-    this.actions,
+    this.shortcuts
   });
 
   @override
@@ -96,8 +94,7 @@ class KariMaterialApp extends StatelessWidget {
       showSemanticsDebugger: this.showSemanticsDebugger,
       debugShowCheckedModeBanner: this.debugShowCheckedModeBanner,
       shortcuts: this.shortcuts,
-      actions: this.actions,
-      onGenerateRoute: Router.router(context),
+      onGenerateRoute: KareeRouter.router(context),
     );
   }
 }
