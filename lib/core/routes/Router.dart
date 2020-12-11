@@ -57,7 +57,7 @@ enum RouteMode{
   }
 
 
-class Router {
+class KareeRouter {
 
   static cupertino.BuildContext context;
 
@@ -116,7 +116,7 @@ class Router {
   }
 
   static router(cupertino.BuildContext context) {
-    Router.context = context;
+    KareeRouter.context = context;
     return appRoute;
   }
 
