@@ -38,7 +38,6 @@ enum RouteMode{
 
   void screen(String name, RouteMode mode, {dynamic parameter, RouteDirection direction = RouteDirection.LEFT_TO_RIGHT, cupertino.BuildContext context}){
     var ctx = context ; // ?? Router.context;
-    print("Context = "+ctx.toString());
     switch(mode){
       case RouteMode.REPLACE:
         cupertino.Navigator.pushReplacementNamed(ctx, name, arguments: parameter);
@@ -88,13 +87,12 @@ class KareeRouter {
   static get getRouter => (cupertino.RouteSettings rs)=>appRoute(rs);
 
   static cupertino.Route<dynamic> appRoute(cupertino.RouteSettings settings) {
-    print("Setting init $settings");
 
     try{ 
       return cupertino.PageRouteBuilder(
         settings: settings,
         transitionDuration: Duration(milliseconds: 400),
-        pageBuilder: (_, a1, a2) => settings.isInitialRoute ? initialScreen() : screens.firstWhere((routeItem) => routeItem[#name] == settings.name)[#screen]
+        pageBuilder: (_, a1, a2) => settings.name == null || settings.name == '/' ? initialScreen() : screens.firstWhere((routeItem) => routeItem[#name] == settings.name)[#screen]
       );
     }catch(e){
       return new RouteTransition(builder: (_){
