@@ -7,7 +7,7 @@ import 'controller/Controller.dart';
 
 export 'controller/Controller.dart';
 export 'package:screen_tracker/screen_tracker.dart';
-export 'widgets/KariMaterialApp.dart';
+export 'widgets/karee_material_app.dart';
 export 'routes/Router.dart';
 
 /*
