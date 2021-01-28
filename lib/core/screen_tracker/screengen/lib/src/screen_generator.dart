@@ -23,11 +23,46 @@ class ScreenGenerator extends GeneratorForAnnotation<Screen> {
         
     generatedScreens.putIfAbsent(source.substring(source.indexOf("'")+1, source.lastIndexOf("'")), () => {
       #uri: element.source.uri.toString(),
-      #className: "${sh.replaceAll(ex, '').replaceAll('-s', 'S')}()",
+      #className: "${underscoreToCambel(sh.replaceAll(ex, ''))}()",
       #initial: annotation.getField('isInitial')?.toBoolValue()
     });
      writeMap();
     
+  }
+
+
+  String cambelToUnderscore([String name = '']) {
+    var response = '';
+    for (var index = 0; index < name.length; index++) {
+        var char = name[index];
+        if(isUpper(char)){
+            response = response+(index == 0 ? '' : '_')+char.toLowerCase();
+        }else{
+            response = response+char;
+        }
+    }
+    return response;
+  }
+
+  String underscoreToCambel([String name = '']) {
+      var response = '';
+      for (var index = 0; index < name.length; index++) {
+          var char = name[index];
+          char = index == 0 && !isUpper(char) ? char.toUpperCase() : char;
+          if(char == '_'){
+              response = response+(index +1 < name.length ? name[index+1].toUpperCase() : '');
+              index++;
+          }else{
+              response = response+char;
+          }
+      }
+      return response;
+  }
+
+  bool isUpper([String char = '']) {
+    if(char == null || char.isEmpty)
+      return false;
+    return char.codeUnitAt(0) >= 65 && char.codeUnitAt(0) <= 90;
   }
 }
 
@@ -42,9 +77,9 @@ writeMap()async {
   String content = """\n/*\n *\t\n@Author Champlain Marius Bakop\n@Email champlainmarius20@gmail.com\n@github ChamplainLeCode */\n\n\nList<Map<Symbol, dynamic>> screens = [\n""";
   generatedScreens.forEach((String annotation, Map<Symbol, dynamic> data){
     if(data[#initial])
-      content = """import '${data[#uri]}';\n$content\n\t{#name: '$annotation', #screen: ${data[#className]}, #initial: ${data[#initial]}},""";
+      content = """import '${data[#uri]}';\n$content\n\t{#name: '$annotation', #screen: () => ${data[#className]}, #initial: ${data[#initial]}},""";
     else
-      content = """import '${data[#uri]}';\n$content\n\t{#name: '$annotation', #screen: ${data[#className]}},""";
+      content = """import '${data[#uri]}';\n$content\n\t{#name: '$annotation', #screen: () => ${data[#className]}},""";
   });
   content = "$content\n\n];";
   await f.writeAsString(content, mode: FileMode.write);

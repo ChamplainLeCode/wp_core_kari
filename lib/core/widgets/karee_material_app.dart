@@ -14,9 +14,7 @@ import '../routes/Router.dart';
  * KariMaterialApp simple Material App based on Flutter MaterialApp
  * with custom Router for Kari
  */
-class KariMaterialApp extends StatelessWidget {
-
-
+class KareeMaterialApp extends StatelessWidget {
   final GlobalKey<NavigatorState> navigatorKey;
   final Map<String, WidgetBuilder> routes;
   final List<NavigatorObserver> navigatorObservers;
@@ -39,38 +37,34 @@ class KariMaterialApp extends StatelessWidget {
   final Map<LogicalKeySet, Intent> shortcuts;
   final bool debugShowMaterialGrid;
 
-
-  const KariMaterialApp({
-
-    Key key,
-    this.navigatorKey,
-    this.routes = const <String, WidgetBuilder>{},
-  //  this.onUnknownRoute,
-    this.navigatorObservers = const <NavigatorObserver>[],
-    //this.builder,
-    this.title = '',
-    this.onGenerateTitle,
-    this.color,
-    this.theme,
-    this.darkTheme,
-    this.themeMode = ThemeMode.system,
-    this.locale,
-    this.localizationsDelegates,
-    this.localeListResolutionCallback,
-    this.localeResolutionCallback,
-    this.supportedLocales = const <Locale>[Locale('en', 'US')],
-    this.debugShowMaterialGrid = false,
-    this.showPerformanceOverlay = false,
-    this.checkerboardRasterCacheImages = false,
-    this.checkerboardOffscreenLayers = false,
-    this.showSemanticsDebugger = false,
-    this.debugShowCheckedModeBanner = true,
-    this.shortcuts
-  });
+  const KareeMaterialApp(
+      {Key key,
+      this.navigatorKey,
+      this.routes = const <String, WidgetBuilder>{},
+      //  this.onUnknownRoute,
+      this.navigatorObservers = const <NavigatorObserver>[],
+      //this.builder,
+      this.title = '',
+      this.onGenerateTitle,
+      this.color,
+      this.theme,
+      this.darkTheme,
+      this.themeMode = ThemeMode.system,
+      this.locale,
+      this.localizationsDelegates,
+      this.localeListResolutionCallback,
+      this.localeResolutionCallback,
+      this.supportedLocales = const <Locale>[Locale('en', 'US')],
+      this.debugShowMaterialGrid = false,
+      this.showPerformanceOverlay = false,
+      this.checkerboardRasterCacheImages = false,
+      this.checkerboardOffscreenLayers = false,
+      this.showSemanticsDebugger = false,
+      this.debugShowCheckedModeBanner = true,
+      this.shortcuts});
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       key: this.key,
       navigatorKey: this.navigatorKey,
