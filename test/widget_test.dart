@@ -11,7 +11,6 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   testWidgets('Kari app set', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyKariApp());
-    
+    await tester.pumpWidget(MyKareeApp());
   });
 }
