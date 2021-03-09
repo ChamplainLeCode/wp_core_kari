@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 /*
@@ -7,13 +6,12 @@ import 'package:flutter/material.dart';
  * @github ChamplainLeCode
  * 
  */
-class Style{
-  
+class Style {
   /// -------------------------- Colors -----------------------------
 
   static final Color primaryColor = Color(0xFFBB5C39);
 
-  static final  whiteBackground = Colors.grey;
+  static final whiteBackground = Colors.grey;
 
   static final Color profileSectionBackground = Colors.white;
 
@@ -21,22 +19,9 @@ class Style{
 
   /// -------------------------- Styles -----------------------------
 
-  static final TextStyle profileText = TextStyle(color: whiteBackground, fontSize: 20);
+  static final TextStyle profileText =
+      TextStyle(color: whiteBackground, fontSize: 20);
 
-  static final TextStyle profileTextGrey = TextStyle(color: Colors.black45,  fontWeight: FontWeight.w400);
-
-}
-
-class Login extends StatefulWidget {
-  @override
-  _LoginState createState() => _LoginState();
-}
-
-class _LoginState extends State<Login> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
+  static final TextStyle profileTextGrey =
+      TextStyle(color: Colors.black45, fontWeight: FontWeight.w400);
 }

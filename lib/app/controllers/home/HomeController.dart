@@ -1,5 +1,4 @@
-import "../../../core/core.dart";
-
+import 'package:karee_core/karee_core.dart' show Controller, screen, RouteMode;
 
 /*
  * @Author Champlain Marius Bakop
@@ -8,10 +7,8 @@ import "../../../core/core.dart";
  * 
  */
 @Controller
-class HomeController{
-   
-   
-  dynamic index(){
+class HomeController {
+  dynamic index() {
     screen("home", RouteMode.REPLACE);
   }
 }

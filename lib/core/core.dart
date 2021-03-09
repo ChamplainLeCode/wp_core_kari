@@ -1,15 +1,9 @@
-library core;
-
+import '../app/app.module.dart';
 import '../app/routes/Routes.dart';
 import 'core.reflectable.dart';
-
-import 'controller/Controller.dart';
-
-export 'controller/Controller.dart';
-export 'package:screen_tracker/screen_tracker.dart';
-export 'widgets/karee_material_app.dart';
-export 'routes/Router.dart';
-
+import 'package:karee_core/karee_core.dart'
+    show subscribeController, subscribeScreen;
+export 'package:karee_core/karee_core.dart';
 /*
  * @Author Champlain Marius Bakop
  * @Email champlainmarius20@gmail.com
@@ -17,27 +11,17 @@ export 'routes/Router.dart';
  * 
  */
 
+void initControllerReflectable() {
+  /**
+   * Here we subscribe controllers
+   */
 
-doRouting(String control, String method, dynamic params){
-  try{
-    if(Controllers.reflectors[control].hasReflectee){
-      if(params is List){
-        return Controllers.reflectors[control].invoke(method, params);
-      }else{
-        if(params == null){
-          return Controllers.reflectors[control].invoke(method, []);
-        }
-        return Controllers.reflectors[control].invoke(method, [params]);  
-      }  
-    }
-  }catch (ex, stack){
-    print(ex);
-    print(stack);
-  }
+  controllers.forEach(subscribeController);
+  screens.forEach(subscribeScreen);
 }
 
-
-initCore(){
+initCore() {
+  print('Initialisation started');
   initializeReflectable();
   registeredRoute();
   initControllerReflectable();
@@ -45,4 +29,4 @@ initCore(){
   print('Initialisation ended');
 }
 
-main(){}
+main() {}

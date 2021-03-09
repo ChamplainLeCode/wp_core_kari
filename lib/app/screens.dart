@@ -1,4 +1,4 @@
-import 'screens/Home-screen.dart';
+import 'screens/home_screen.dart';
 
 /*
  * @Author Champlain Marius Bakop
@@ -8,7 +8,5 @@ import 'screens/Home-screen.dart';
  */
 
 List<Map<Symbol, dynamic>> screens = [
-
-	{#name: 'home', #screen: HomeScreen(), #initial: true},
-
+  {#name: 'home', #screen: HomeScreen(), #initial: true},
 ];

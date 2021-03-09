@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'core/core.dart';
+import 'core/core.dart' show KareeMaterialApp, initCore;
 
-/*
- * @Author Champlain Marius Bakop
- * @Email champlainmarius20@gmail.com
- * @Github ChamplainLeCode
- * 
- */
+///
+/// @Author Champlain Marius Bakop
+/// @Email champlainmarius20@gmail.com
+/// @Github ChamplainLeCode
+///
 
 void main() {
   // Do not modify
@@ -15,9 +14,9 @@ void main() {
   runApp(MyKareeApp());
 
   //! Add your custom configurations
-  /**
-     * To stuck your app in portrait
-     */
+  ///
+  /// To stuck your app in portrait
+  ///
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
 }

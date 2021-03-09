@@ -1,4 +1,4 @@
-import '../../core/core.dart';
+import 'package:karee_core/karee_core.dart' show Route;
 
 /*
  * @Author Champlain Marius Bakop
@@ -6,8 +6,6 @@ import '../../core/core.dart';
  * @github ChamplainLeCode
  * 
  */
-void registeredRoute(){
-
+void registeredRoute() {
   Route.on("/", "HomeController@index");
-
 }

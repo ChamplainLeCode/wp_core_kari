@@ -9,7 +9,7 @@ import '../lib/main.dart';
  */
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
-  testWidgets('Kari app set', (WidgetTester tester) async {
+  testWidgets('Karee app set', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyKareeApp());
   });
