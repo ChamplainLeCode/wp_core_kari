@@ -8,11 +8,11 @@ import 'package:flutter/material.dart';
  * 
  */
 class IconBadge extends StatefulWidget {
-  final double size;
-  final int number;
-  final IconData icon;
-  final Function callBack;
-  final Color color;
+  final double? size;
+  final int? number;
+  final IconData? icon;
+  final Function? callBack;
+  final Color? color;
 
   IconBadge({
     this.size = 50,
@@ -20,7 +20,7 @@ class IconBadge extends StatefulWidget {
     this.icon,
     this.callBack,
     this.color
-  }): assert(icon != null, number >= 0);
+  }): assert(icon != null, number! >= 0);
   @override
   _IconBadgeState createState() => _IconBadgeState();
 
@@ -43,7 +43,7 @@ class _IconBadgeState extends State<IconBadge> {
                     size: 20,
                     color: widget.color ?? Color(0XAF474D3C),
                   ),
-                  onPressed: widget.callBack,
+                  onPressed: widget.callBack!.call,
                 )
               )
             ]
@@ -55,7 +55,7 @@ class _IconBadgeState extends State<IconBadge> {
                     size: 20,
                     color: widget.color ?? Color(0XAF474D3C),
                   ),
-                  onPressed: widget.callBack,
+                  onPressed: widget.callBack!.call,
                 )
               ),
               Container(

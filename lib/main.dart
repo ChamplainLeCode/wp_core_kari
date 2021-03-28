@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'core/core.dart' show KareeMaterialApp, initCore;
-
+import 'core/core.dart' show KareeMaterialApp, initCore, KareeInstanceProfile, ErrorContactAddress;
 ///
 /// @Author Champlain Marius Bakop
 /// @Email champlainmarius20@gmail.com
@@ -25,23 +24,24 @@ class MyKareeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Don't change this widget
+    
     return KareeMaterialApp(
-
+      /// This is the profile of your application on production
+      /// replace KareeInstanceProfile.production by KareeInstanceProfile.development
+      /// during development, to better manage error in your application
+        profile: KareeInstanceProfile.production,
+      /// When you are going to release your application, you need to turn
+      /// your application profile to production and setup the error contact.
+      /// You can also customize your application general error screen. And if
+      /// you need you access to your error contact address use the static variable
+      /// KareeMaterialApp.globalErrorContactAddress
+        errorContactAddress: ErrorContactAddress(
+          appName: 'Karee Sample',
+          appSupportEmail: 'support@bixterprise.com',
+          appVersion: "v9.0.3",
+        ),
         // This represents your app's title
         title: 'Karee Sample App',
-        theme: ThemeData(
-            primaryColor: MaterialColor(0xFFBB5C39, {
-              100: Color(0xFFBB5C39).withOpacity(0.1),
-              200: Color(0xFFBB5C39).withOpacity(0.2),
-              300: Color(0xFFBB5C39).withOpacity(0.3),
-              400: Color(0xFFBB5C39).withOpacity(0.4),
-              500: Color(0xFFBB5C39).withOpacity(0.5),
-              600: Color(0xFFBB5C39).withOpacity(0.6),
-              700: Color(0xFFBB5C39).withOpacity(0.7),
-              800: Color(0xFFBB5C39).withOpacity(0.8),
-              900: Color(0xFFBB5C39).withOpacity(0.9),
-            }),
-            secondaryHeaderColor: Color(0xFFBB5C39)),
         debugShowCheckedModeBanner: false);
   }
 }

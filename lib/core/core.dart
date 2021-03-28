@@ -4,17 +4,20 @@ import 'core.reflectable.dart';
 import 'package:karee_core/karee_core.dart'
     show subscribeController, subscribeScreen;
 export 'package:karee_core/karee_core.dart';
-/*
- * @Author Champlain Marius Bakop
- * @Email champlainmarius20@gmail.com
- * @Github ChamplainLeCode
- * 
- */
+
+///
+/// by Champlain Marius Bakop
+/// 
+/// email champlainmarius20@gmail.com
+/// 
+/// github ChamplainLeCode
+///
+///
 
 void initControllerReflectable() {
-  /**
-   * Here we subscribe controllers
-   */
+  ///
+  /// Here we subscribe controllers
+  ///
 
   controllers.forEach(subscribeController);
   screens.forEach(subscribeScreen);
