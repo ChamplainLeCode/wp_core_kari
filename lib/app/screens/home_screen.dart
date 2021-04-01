@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    //SystemChrome.setEnabledSystemUIOverlays([]);
     return WillPopScope(
       child: Scaffold(
           body: Container(
@@ -53,7 +52,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
                     if(await launcher.canLaunch(KareeConstants.KAREE_GITHUB))
                        await launcher.launch(KareeConstants.KAREE_GITHUB);
-                    print('Failed to launch');
                   }, 
                   child: Text('Get\'s started'),
                   style: ButtonStyle(
