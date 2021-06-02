@@ -1,11 +1,11 @@
-import 'package:karee_core/karee_core.dart' show Route;
+import 'package:karee/navigation.dart' show Route;
 
 /*
- * @Author Champlain Marius Bakop
- * @email champlainmarius20@gmail.com
- * @github ChamplainLeCode
+ * By Karee
  * 
  */
 void registeredRoute() {
-  Route.on("/", "HomeController@index");
+  Route.on('/', 'HomeController@index');
+  Route.on('/dashboard', 'DashBoardController@home');
+  Route.on('/dashboard/{menu}', 'DashBoardController@menuScreen');
 }

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/main.dart';
+import '../lib/main.dart' show MyKareeApp;
 
 /*
  * @Author Champlain Marius Bakop
@@ -12,5 +12,6 @@ void main() {
   testWidgets('Karee app set', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyKareeApp());
+    expect(1, 1);
   });
 }

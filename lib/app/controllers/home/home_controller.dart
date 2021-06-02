@@ -1,14 +1,13 @@
-import 'package:karee_core/karee_core.dart' show Controller, screen, RouteMode;
+import 'package:karee/navigation.dart' show RouteMode, screen;
+import 'package:karee/annotations.dart' show Controller;
 
 /*
- * @Author Champlain Marius Bakop
- * @email champlainmarius20@gmail.com
  * @github ChamplainLeCode
  * 
  */
 @Controller
 class HomeController {
-  dynamic index() {
-    screen("home", RouteMode.REPLACE);
+  void index() {
+    screen('home', RouteMode.REPLACE);
   }
 }

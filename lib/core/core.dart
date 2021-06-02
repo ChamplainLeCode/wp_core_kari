@@ -1,15 +1,16 @@
-import '../app/app.module.dart';
+// import 'package:karee_sample/core/extensions.dart';
+import 'package:flutter/widgets.dart';
+import 'app.module.dart';
 import '../app/routes/Routes.dart';
 import 'core.reflectable.dart';
-import 'package:karee_core/karee_core.dart'
-    show subscribeController, subscribeScreen;
-export 'package:karee_core/karee_core.dart';
+import 'package:karee/core.dart';
+import 'extensions/extensions_controllers.dart';
 
 ///
 /// by Champlain Marius Bakop
-/// 
+///
 /// email champlainmarius20@gmail.com
-/// 
+///
 /// github ChamplainLeCode
 ///
 ///
@@ -23,13 +24,14 @@ void initControllerReflectable() {
   screens.forEach(subscribeScreen);
 }
 
-initCore() {
+Future<void> initCore() async {
   print('Initialisation started');
+  WidgetsFlutterBinding.ensureInitialized();
+  await loadAppConfig();
   initializeReflectable();
   registeredRoute();
   initControllerReflectable();
-
   print('Initialisation ended');
 }
 
-main() {}
+void main() async {}
