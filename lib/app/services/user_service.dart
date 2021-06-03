@@ -18,14 +18,9 @@ class UserService {
   @Value('@{security.authorization.password}')
   late final String password;
 
-  @Autowired
-  late final ParameterService parameterService;
-
   Future<Page<dynamic>> getUsers([Pageable? pageInfo]) async {
     pageInfo ??= Pageable.fromSize(pageSize);
 
     return Page.fromList([]);
   }
 }
-
-class ParameterService {}
