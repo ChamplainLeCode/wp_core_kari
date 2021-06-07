@@ -1,6 +1,6 @@
 import 'package:karee/core.dart';
 
-import '../../entities/utils/utils.dart';
+import '../../utils/utils.dart';
 import '../../screens/dashboard/components/dashboard_app_bar_tool.dart';
 import '../../screens/dashboard/components/dashboard_karee_presentation.dart';
 import 'package:flutter/material.dart';
@@ -53,7 +53,10 @@ class _HomeDashboardScreenState extends ScreenState<HomeDashBoardScreen> {
           Expanded(
               child: Column(children: [
             if (!Utils.isMobileView) DashboardAppBarTool(),
-            Expanded(child: RouterWidget(name: #dashboardRouter, initial: DashboardKareePresentation())),
+            Expanded(
+                child: RouterWidget(
+                    name: #dashboardRouter,
+                    initial: DashboardKareePresentation())),
             DashboardFooter()
           ]))
         ]));

@@ -1,6 +1,6 @@
 import '../../../components/icon_badge.dart';
-import '../../../entities/utils/Style.dart';
-import '../../../entities/utils/utils.dart';
+import '../../../utils/Style.dart';
+import '../../../utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/widgets.dart';
 
@@ -67,7 +67,8 @@ class DashboardAppBarTool extends StatelessComponent {
                   alignment: Alignment.center,
                   child: Text(
                     'Champlain Marius',
-                    style: TextStyle(color: Style.whiteText, fontWeight: FontWeight.w300),
+                    style: TextStyle(
+                        color: Style.whiteText, fontWeight: FontWeight.w300),
                   ))
           ],
         ));

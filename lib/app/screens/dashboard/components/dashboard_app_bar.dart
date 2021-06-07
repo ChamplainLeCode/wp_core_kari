@@ -1,6 +1,6 @@
-import '../../../entities/utils/Style.dart';
+import '../../../utils/Style.dart';
 import 'package:flutter/material.dart';
-import '../../../entities/utils/utils.dart';
+import '../../../utils/utils.dart';
 import 'package:karee/widgets.dart';
 
 import 'dashboard_app_bar_tool.dart';
@@ -32,8 +32,14 @@ class _DashboardAppBarState extends ComponentState<DashboardAppBar> {
                 text: TextSpan(children: [
                   TextSpan(
                       text: 'Karee ',
-                      style: TextStyle(fontWeight: FontWeight.w700, fontSize: 20, color: Style.whiteText)),
-                  TextSpan(text: 'Community', style: TextStyle(fontWeight: FontWeight.w300, color: Style.whiteText))
+                      style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 20,
+                          color: Style.whiteText)),
+                  TextSpan(
+                      text: 'Community',
+                      style: TextStyle(
+                          fontWeight: FontWeight.w300, color: Style.whiteText))
                 ]),
               )),
           if (Utils.isMobileView) DashboardAppBarTool()

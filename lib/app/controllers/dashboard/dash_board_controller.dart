@@ -5,9 +5,10 @@ import '../../screens/dashboard/dashboard_services_screen.dart';
 
 import '../../screens/dashboard/dashboard_constants_screen.dart';
 import '../../screens/dashboard/dashboard_controllers_screen.dart';
-import '../../services/user_service.dart';
 import 'package:karee/annotations.dart';
 import 'package:karee/navigation.dart';
+
+import '../../services/user_service.dart';
 
 /// Generated Karee Controller
 ///
@@ -45,26 +46,32 @@ class DashBoardController {
   }
 
   void constants() {
-    screen(DashboardConstantsScreen(), RouteMode.NONE, routerName: #dashboardRouter);
+    screen(DashboardConstantsScreen(), RouteMode.NONE,
+        routerName: #dashboardRouter);
   }
 
   void controllers() {
-    screen(DashboardControllersScreen(), RouteMode.NONE, routerName: #dashboardRouter);
+    screen(DashboardControllersScreen(), RouteMode.NONE,
+        routerName: #dashboardRouter);
   }
 
   void resources() {
-    screen(DashboardResourcesScreen(), RouteMode.NONE, routerName: #dashboardRouter);
+    screen(DashboardResourcesScreen(), RouteMode.NONE,
+        routerName: #dashboardRouter);
   }
 
   void routage() {
-    screen(DashboardRoutageScreen(), RouteMode.NONE, routerName: #dashboardRouter);
+    screen(DashboardRoutageScreen(), RouteMode.NONE,
+        routerName: #dashboardRouter);
   }
 
   void services() {
-    screen(DashboardServicesScreen(), RouteMode.NONE, routerName: #dashboardRouter);
+    screen(DashboardServicesScreen(), RouteMode.NONE,
+        routerName: #dashboardRouter);
   }
 
   void screenTab() {
-    screen(DashboardScreenTabScreen(), RouteMode.NONE, routerName: #dashboardRouter);
+    screen(DashboardScreenTabScreen(), RouteMode.NONE,
+        routerName: #dashboardRouter);
   }
 }

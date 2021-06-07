@@ -1,4 +1,4 @@
-import '../../entities/utils/Style.dart';
+import '../../utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/internationalization.dart';
 import 'package:karee/widgets.dart';
@@ -9,10 +9,12 @@ class DashboardRoutageScreen extends RoutableWidget {
     return Scaffold(
       body: SingleChildScrollView(
           padding: EdgeInsets.all(10),
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
-                child: Text('karee.module.routage.title'.translate(), style: Style.moduleTitleStyle)),
+                child: Text('karee.module.routage.title'.translate(),
+                    style: Style.moduleTitleStyle)),
             Padding(
                 padding: EdgeInsets.only(bottom: 20),
                 child: Text(
@@ -21,9 +23,13 @@ class DashboardRoutageScreen extends RoutableWidget {
                   style: Style.moduleDetailStyle,
                 )),
             Row(children: [
-              Icon(Icons.navigation_rounded, color: Style.dashboardSelectedMenu),
+              Icon(Icons.navigation_rounded,
+                  color: Style.dashboardSelectedMenu),
               Text('  ' + 'karee.module.routage.url.title'.translate(),
-                  style: TextStyle(color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 18))
+                  style: TextStyle(
+                      color: Style.dashboardSelectedMenu,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 18))
             ]),
             Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
@@ -34,13 +40,20 @@ class DashboardRoutageScreen extends RoutableWidget {
                   textScaleFactor: 1.1,
                 )),
             Container(
-                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
+                decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Style.dashboardSelectedMenu, width: 2)),
                 margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-                child: Image(image: AssetImage('assets/images/routage-url.png'))),
+                child:
+                    Image(image: AssetImage('assets/images/routage-url.png'))),
             Row(children: [
-              Icon(Icons.integration_instructions_outlined, color: Style.dashboardSelectedMenu),
+              Icon(Icons.integration_instructions_outlined,
+                  color: Style.dashboardSelectedMenu),
               Text('  ' + 'karee.module.routage.internal.title'.translate(),
-                  style: TextStyle(color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 18))
+                  style: TextStyle(
+                      color: Style.dashboardSelectedMenu,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 18))
             ]),
             Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
@@ -54,31 +67,58 @@ class DashboardRoutageScreen extends RoutableWidget {
                   Padding(
                       padding: EdgeInsets.only(left: 20, top: 20),
                       child: Row(children: [
-                        Icon(Icons.settings_input_composite_rounded, color: Style.dashboardSelectedMenu),
-                        Text('  ' + 'karee.module.routage.internal.step1'.translate(),
+                        Icon(Icons.settings_input_composite_rounded,
+                            color: Style.dashboardSelectedMenu),
+                        Text(
+                            '  ' +
+                                'karee.module.routage.internal.step1'
+                                    .translate(),
                             style: TextStyle(
-                                color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 16))
+                                color: Style.dashboardSelectedMenu,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16))
                       ])),
                   Container(
-                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
-                      margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                      child: Image(image: AssetImage('assets/images/routage-set-router.png'))),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                              color: Style.dashboardSelectedMenu, width: 2)),
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                      child: Image(
+                          image: AssetImage(
+                              'assets/images/routage-set-router.png'))),
                   Padding(
                       padding: EdgeInsets.only(left: 20, top: 20),
                       child: Row(children: [
-                        Icon(Icons.send_rounded, color: Style.dashboardSelectedMenu),
-                        Text('  ' + 'karee.module.routage.internal.step2'.translate(),
+                        Icon(Icons.send_rounded,
+                            color: Style.dashboardSelectedMenu),
+                        Text(
+                            '  ' +
+                                'karee.module.routage.internal.step2'
+                                    .translate(),
                             style: TextStyle(
-                                color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 16))
+                                color: Style.dashboardSelectedMenu,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16))
                       ])),
                   Container(
-                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
-                      margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                      child: Image(image: AssetImage('assets/images/routage-setup-routablewidget.png'))),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                              color: Style.dashboardSelectedMenu, width: 2)),
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                      child: Image(
+                          image: AssetImage(
+                              'assets/images/routage-setup-routablewidget.png'))),
                   Container(
-                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
-                      margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                      child: Image(image: AssetImage('assets/images/routage-load-route.png'))),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                              color: Style.dashboardSelectedMenu, width: 2)),
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                      child: Image(
+                          image: AssetImage(
+                              'assets/images/routage-load-route.png'))),
                 ])),
           ])),
     );

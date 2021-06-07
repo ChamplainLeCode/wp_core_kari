@@ -1,7 +1,7 @@
 // import 'package:karee_sample/core/extensions.dart';
 import 'package:flutter/widgets.dart';
 import 'app.module.dart';
-import '../app/routes/Routes.dart';
+import '../app/routes/routes.dart';
 import 'core.reflectable.dart';
 import 'package:karee/core.dart';
 import 'extensions/extensions_controllers.dart';

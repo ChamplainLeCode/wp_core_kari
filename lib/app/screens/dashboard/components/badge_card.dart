@@ -1,4 +1,4 @@
-import '../../../entities/utils/Style.dart';
+import '../../../utils/Style.dart';
 import 'package:flutter/material.dart';
 
 class BadgeCard extends StatelessWidget {
@@ -7,7 +7,12 @@ class BadgeCard extends StatelessWidget {
   final String label;
   final double fontSize;
 
-  BadgeCard({this.width = 24, this.height = 15, required this.color, required this.label, required this.fontSize});
+  BadgeCard(
+      {this.width = 24,
+      this.height = 15,
+      required this.color,
+      required this.label,
+      required this.fontSize});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,7 +23,11 @@ class BadgeCard extends StatelessWidget {
       alignment: Alignment.center,
       width: width,
       height: height,
-      child: Text(label, style: TextStyle(fontSize: fontSize, fontWeight: FontWeight.w500, color: Style.whiteText)),
+      child: Text(label,
+          style: TextStyle(
+              fontSize: fontSize,
+              fontWeight: FontWeight.w500,
+              color: Style.whiteText)),
     );
   }
 }

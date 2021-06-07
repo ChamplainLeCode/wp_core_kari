@@ -1,4 +1,4 @@
-import '../../entities/utils/Style.dart';
+import '../../utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/widgets.dart';
 import 'package:karee/internationalization.dart';
@@ -13,10 +13,12 @@ class DashboardControllersScreen extends RoutableWidget {
     return Scaffold(
       body: SingleChildScrollView(
           padding: EdgeInsets.all(10),
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
-                child: Text('karee.module.controller.title'.translate(), style: Style.moduleTitleStyle)),
+                child: Text('karee.module.controller.title'.translate(),
+                    style: Style.moduleTitleStyle)),
             Padding(
                 padding: EdgeInsets.only(bottom: 20),
                 child: Text(
@@ -25,9 +27,13 @@ class DashboardControllersScreen extends RoutableWidget {
                   style: Style.moduleDetailStyle,
                 )),
             Row(children: [
-              Icon(Icons.miscellaneous_services, color: Style.dashboardSelectedMenu),
+              Icon(Icons.miscellaneous_services,
+                  color: Style.dashboardSelectedMenu),
               Text('  ' + 'karee.module.controller.service.title'.translate(),
-                  style: TextStyle(color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 18))
+                  style: TextStyle(
+                      color: Style.dashboardSelectedMenu,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 18))
             ]),
             Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
@@ -38,9 +44,13 @@ class DashboardControllersScreen extends RoutableWidget {
                   textScaleFactor: 1.1,
                 )),
             Row(children: [
-              Icon(Icons.settings_ethernet_rounded, color: Style.dashboardSelectedMenu),
+              Icon(Icons.settings_ethernet_rounded,
+                  color: Style.dashboardSelectedMenu),
               Text('  ' + 'karee.module.controller.variable.title'.translate(),
-                  style: TextStyle(color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 18))
+                  style: TextStyle(
+                      color: Style.dashboardSelectedMenu,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 18))
             ]),
             Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
