@@ -1,5 +1,5 @@
-import 'package:simba_app/app/screens/home_screen.dart';
-import 'package:simba_app/app/screens/dashboard/home_dash_board_screen.dart';
+import '/app/screens/home_screen.dart';
+import '/app/screens/dashboard/home_dash_board_screen.dart';
 
 
 /// Generated buy Karee
