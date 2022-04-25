@@ -1,4 +1,4 @@
-import '../../../utils/style.dart.dart';
+import '../../../utils/style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/widgets.dart';
 

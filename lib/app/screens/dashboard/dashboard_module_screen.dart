@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:karee/internationalization.dart';
 
 import 'package:karee/widgets.dart';
-import '../../utils/style.dart.dart';
+import '../../utils/style.dart';
 import '../../../resources/dictionary.dart';
 
 /// Generated Karee Screen

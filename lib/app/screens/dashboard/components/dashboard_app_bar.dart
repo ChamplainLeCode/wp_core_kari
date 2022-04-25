@@ -1,7 +1,7 @@
 import 'package:karee/navigation.dart';
 import 'package:karee/widgets.dart';
 
-import '../../../utils/style.dart.dart';
+import '../../../utils/style.dart';
 import 'package:flutter/material.dart';
 import '../../../utils/utils.dart';
 
