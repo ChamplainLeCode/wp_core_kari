@@ -54,9 +54,12 @@ class _HomeDashboardScreenState extends ScreenState<HomeDashBoardScreen> {
               child: Column(children: [
             if (!Utils.isMobileView) DashboardAppBarTool(),
             Expanded(
-                child: RouterWidget(
-                    name: #dashboardRouter,
-                    initial: DashboardKareePresentation())),
+                child: SingleChildScrollView(
+                    padding: EdgeInsets.all(30),
+                    controller: ScrollController(),
+                    child: RouterWidget(
+                        name: #dashboardRouter,
+                        initial: DashboardKareePresentation()))),
             DashboardFooter()
           ]))
         ]));

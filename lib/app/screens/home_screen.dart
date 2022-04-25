@@ -2,7 +2,7 @@ import 'package:karee/widgets.dart';
 import 'package:karee/annotations.dart';
 import 'package:karee/navigation.dart';
 import 'package:karee/core.dart';
-import '../utils/Style.dart';
+import '../utils/style.dart.dart';
 import 'package:flutter/material.dart' hide Page;
 import 'package:url_launcher/url_launcher.dart' as launcher;
 /*
@@ -39,7 +39,7 @@ class _HomeScreenState extends ScreenState<HomeScreen> {
                           image:
                               AssetImage('assets/karee.png', package: 'karee')),
                       Text(
-                        'Another way to build Beautiful Application using Flutter with MVC',
+                        'Another way to build Beautiful Application using Flutter',
                         style: TextStyle(
                             fontSize: 30,
                             color: Style.whiteText,
@@ -48,8 +48,12 @@ class _HomeScreenState extends ScreenState<HomeScreen> {
                       ),
                       SizedBox(height: 20),
                       Text(
-                        'Verision v2.1.0',
-                        style: TextStyle(fontSize: 20, color: Style.whiteText),
+                        'version v2.2.0',
+                        style: TextStyle(
+                            fontSize: 20,
+                            color: Style.whiteText.withOpacity(0.8),
+                            fontStyle: FontStyle.italic,
+                            fontWeight: FontWeight.w200),
                       ),
                       SizedBox(height: 20),
                       ElevatedButton(
@@ -75,6 +79,19 @@ class _HomeScreenState extends ScreenState<HomeScreen> {
                           size: 15,
                         ),
                         label: Text('Dashboard'),
+                      ),
+                      SizedBox(height: 10),
+                      ElevatedButton.icon(
+                        onPressed: () {
+                          KareeRouter.goto('/payment');
+                        },
+                        style: ElevatedButton.styleFrom(
+                            primary: Style.successColor, elevation: 10),
+                        icon: Icon(
+                          Icons.payment,
+                          size: 15,
+                        ),
+                        label: Text('Buy Module'),
                       ),
                     ],
                   ),

@@ -9,14 +9,15 @@ import 'package:flutter/material.dart';
 class Style {
   /// -------------------------- Colors -----------------------------
 
-  static final Color primaryColor = Color(0xffbb5c39);
+  static Color get primaryColor => Color(0xff4376bd);
   static final Color primaryDashboardColor = Color(0xff357ca5);
   static final Color primary2DashboardColor = Color(0xff3c8dbc);
   static final Color primaryDashboardDarkColor = Color(0xff222d32);
 
   static final whiteBackground = Color(0xfff7f7f7);
+  static final greyBackground = Color(0xfff0f0f0);
 
-  static final Color whiteText = Colors.white;
+  static const Color whiteText = Colors.white;
 
   static Color successColor = Color(0xff00a65a);
   static Color warningColor = Color(0xfff39c12);
@@ -27,16 +28,20 @@ class Style {
 
   /// -------------------------- Styles -----------------------------
 
-  static final TextStyle profileText = TextStyle(color: whiteBackground, fontSize: 20);
+  static final TextStyle profileText =
+      TextStyle(color: whiteBackground, fontSize: 20);
 
-  static final TextStyle profileTextGrey = TextStyle(color: Colors.black45, fontWeight: FontWeight.w400);
+  static final TextStyle profileTextGrey =
+      TextStyle(color: Colors.black45, fontWeight: FontWeight.w400);
 
-  static TextStyle get moduleItemDetail =>
-      TextStyle(color: Style.primaryDashboardDarkColor, fontWeight: FontWeight.w300);
+  static TextStyle get moduleItemDetail => TextStyle(
+      color: Style.primaryDashboardDarkColor, fontWeight: FontWeight.w300);
 
-  static TextStyle get moduleDetailStyle =>
-      TextStyle(color: Colors.blueGrey, fontSize: 16, fontWeight: FontWeight.w300);
+  static TextStyle get moduleDetailStyle => TextStyle(
+      color: Colors.blueGrey, fontSize: 16, fontWeight: FontWeight.w300);
 
-  static TextStyle get moduleTitleStyle =>
-      TextStyle(color: primaryDashboardDarkColor, fontSize: 22, fontWeight: FontWeight.w400);
+  static TextStyle get moduleTitleStyle => TextStyle(
+      color: primaryDashboardDarkColor,
+      fontSize: 22,
+      fontWeight: FontWeight.w400);
 }

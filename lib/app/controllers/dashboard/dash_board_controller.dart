@@ -1,3 +1,5 @@
+import '../../screens/dashboard/dashboard_module_screen.dart';
+
 import '../../screens/dashboard/dashboard_resources_screen.dart';
 import '../../screens/dashboard/dashboard_routage_screen.dart';
 import '../../screens/dashboard/dashboard_screen_screen.dart';
@@ -15,6 +17,9 @@ import '../../services/user_service.dart';
 /// `DashBoard` is set as Controller
 @Controller
 class DashBoardController {
+  static DashBoardController get instance =>
+      KareeInjector.instance<DashBoardController>()!;
+
   @Autowired
   late UserService userService;
 
@@ -29,6 +34,9 @@ class DashBoardController {
         break;
       case 'controllers':
         controllers();
+        break;
+      case 'modules':
+        modules();
         break;
       case 'resources':
         resources();
@@ -46,32 +54,37 @@ class DashBoardController {
   }
 
   void constants() {
-    screen(DashboardConstantsScreen(), RouteMode.NONE,
+    screen(DashboardConstantsScreen(), RouteMode.INTERNAL,
         routerName: #dashboardRouter);
   }
 
   void controllers() {
-    screen(DashboardControllersScreen(), RouteMode.NONE,
+    screen(DashboardControllersScreen(), RouteMode.INTERNAL,
+        routerName: #dashboardRouter);
+  }
+
+  void modules() {
+    screen(DashboardModuleScreen(), RouteMode.INTERNAL,
         routerName: #dashboardRouter);
   }
 
   void resources() {
-    screen(DashboardResourcesScreen(), RouteMode.NONE,
+    screen(DashboardResourcesScreen(), RouteMode.INTERNAL,
         routerName: #dashboardRouter);
   }
 
   void routage() {
-    screen(DashboardRoutageScreen(), RouteMode.NONE,
+    screen(DashboardRoutageScreen(), RouteMode.INTERNAL,
         routerName: #dashboardRouter);
   }
 
   void services() {
-    screen(DashboardServicesScreen(), RouteMode.NONE,
+    screen(DashboardServicesScreen(), RouteMode.INTERNAL,
         routerName: #dashboardRouter);
   }
 
   void screenTab() {
-    screen(DashboardScreenTabScreen(), RouteMode.NONE,
+    screen(DashboardScreenTabScreen(), RouteMode.INTERNAL,
         routerName: #dashboardRouter);
   }
 }

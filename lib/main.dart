@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:karee/widgets.dart';
 import 'package:karee/core.dart';
+import 'package:karee/widgets.dart';
 import 'core/core.dart';
 
 ///
-/// @Author Champlain Marius Bakop
-/// @Email champlainmarius20@gmail.com
-/// @Github ChamplainLeCode
+/// Author Champlain Marius Bakop
+///
+/// @Email [champlainmarius20@gmail.com](mailto://champlainmarius20@hotmail.com)
+///
+/// @Github [ChamplainLeCode](https://github.com/ChamplainLeCode)
 ///
 
 void main() async {
@@ -15,14 +17,9 @@ void main() async {
   runApp(MyKareeApp());
 
   //! Add your custom configurations
-  ///
-  /// To stuck your app in portrait
-  ///
-  // await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
 }
 
 class MyKareeApp extends StatelessWidget {
-  // static final appLanguage = Of(AppLanguage('en'));
   final sideMenuSelected = Of.tag(0, #sideMenu);
 
   @override
@@ -30,6 +27,7 @@ class MyKareeApp extends StatelessWidget {
     // Don't change this widget
 
     return KareeMaterialApp(
+        kind: ApplicationKind.material,
         locale: Locale('fr'),
         supportedLocales: [Locale('en')],
         observables: [sideMenuSelected],
@@ -46,8 +44,8 @@ class MyKareeApp extends StatelessWidget {
         /// KareeMaterialApp.globalErrorContactAddress
         errorContactAddress: ErrorContactAddress(
           appName: 'Karee',
-          appSupportEmail: 'bncmarius@hotmail.com',
-          appVersion: 'v9.0.3',
+          appSupportEmail: 'champlainmarius20@mail.com',
+          appVersion: 'v9.0.4',
         ),
         // locale: Locale('en'),
         // supportedLocales: [Locale('en'), Locale('fr')],

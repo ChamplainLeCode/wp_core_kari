@@ -1,5 +1,5 @@
 import 'package:karee/navigation.dart' show RouteMode, screen;
-import 'package:karee/annotations.dart' show Controller;
+import 'package:karee/annotations.dart' show Controller, KareeInjector;
 
 /*
  * @github ChamplainLeCode
@@ -7,6 +7,9 @@ import 'package:karee/annotations.dart' show Controller;
  */
 @Controller
 class HomeController {
+  static HomeController get instance =>
+      KareeInjector.instance<HomeController>()!;
+
   void index() {
     screen('home', RouteMode.REPLACE);
   }
