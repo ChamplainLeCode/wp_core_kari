@@ -23,7 +23,7 @@ class DashboardRoutageScreen extends RoutableWidget {
       FittedBox(
           child: Row(children: [
         Icon(Icons.navigation_rounded, color: Style.dashboardSelectedMenu),
-        Text('  ' + Dictionary.kareeModuleRoutageUrlTitle.translate(),
+        Text('  ${Dictionary.kareeModuleRoutageUrlTitle.translate()}',
             style: TextStyle(
                 color: Style.dashboardSelectedMenu,
                 fontWeight: FontWeight.w400,
@@ -46,7 +46,7 @@ class DashboardRoutageScreen extends RoutableWidget {
           child: Row(children: [
         Icon(Icons.integration_instructions_outlined,
             color: Style.dashboardSelectedMenu),
-        Text('  ' + Dictionary.kareeModuleRoutageInternalTitle.translate(),
+        Text('  ${Dictionary.kareeModuleRoutageInternalTitle.translate()}',
             style: TextStyle(
                 color: Style.dashboardSelectedMenu,
                 fontWeight: FontWeight.w400,
@@ -56,7 +56,7 @@ class DashboardRoutageScreen extends RoutableWidget {
           padding: EdgeInsets.symmetric(vertical: 10),
           child: Column(children: [
             Text(
-              "    " + Dictionary.kareeModuleRoutageInternalDetail.translate(),
+              "    ${Dictionary.kareeModuleRoutageInternalDetail.translate()}",
               textAlign: TextAlign.justify,
               style: Style.moduleItemDetail,
               textScaleFactor: 1.1,
@@ -68,9 +68,7 @@ class DashboardRoutageScreen extends RoutableWidget {
                   Icon(Icons.settings_input_composite_rounded,
                       color: Style.dashboardSelectedMenu),
                   Text(
-                      '  ' +
-                          Dictionary.kareeModuleRoutageInternalStep1
-                              .translate(),
+                      '  ${Dictionary.kareeModuleRoutageInternalStep1.translate()}',
                       style: TextStyle(
                           color: Style.dashboardSelectedMenu,
                           fontWeight: FontWeight.w400,
@@ -89,9 +87,7 @@ class DashboardRoutageScreen extends RoutableWidget {
                     child: Row(children: [
                   Icon(Icons.send_rounded, color: Style.dashboardSelectedMenu),
                   Text(
-                      '  ' +
-                          Dictionary.kareeModuleRoutageInternalStep2
-                              .translate(),
+                      '  ${Dictionary.kareeModuleRoutageInternalStep2.translate()}',
                       style: TextStyle(
                           color: Style.dashboardSelectedMenu,
                           fontWeight: FontWeight.w400,

@@ -65,7 +65,7 @@ class _HomeScreenState extends ScreenState<HomeScreen> {
                           }
                         },
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.primaries.first),
+                            backgroundColor: Colors.primaries.first),
                         child: Text('Get\'s started'),
                       ),
                       SizedBox(height: 10),
@@ -74,26 +74,14 @@ class _HomeScreenState extends ScreenState<HomeScreen> {
                           KareeRouter.goto('/dashboard');
                         },
                         style: ElevatedButton.styleFrom(
-                            primary: Style.warningColor, elevation: 10),
+                            backgroundColor: Style.warningColor, elevation: 10),
                         icon: Icon(
                           Icons.dashboard_customize,
                           size: 15,
                         ),
                         label: Text('Dashboard'),
                       ),
-                      SizedBox(height: 10),
-                      ElevatedButton.icon(
-                        onPressed: () {
-                          KareeRouter.goto('/payment');
-                        },
-                        style: ElevatedButton.styleFrom(
-                            primary: Style.successColor, elevation: 10),
-                        icon: Icon(
-                          Icons.payment,
-                          size: 15,
-                        ),
-                        label: Text('Buy Module'),
-                      ),
+                      SizedBox(height: 10)
                     ],
                   ),
                 ))));

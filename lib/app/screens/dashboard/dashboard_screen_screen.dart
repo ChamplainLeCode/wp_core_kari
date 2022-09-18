@@ -22,7 +22,7 @@ class DashboardScreenTabScreen extends RoutableWidget {
           )),
       Row(children: [
         Icon(Icons.lens_outlined, color: Style.dashboardSelectedMenu),
-        Text('  ' + Dictionary.kareeModuleScreenStlsTitle.translate(),
+        Text('  ${Dictionary.kareeModuleScreenStlsTitle.translate()}',
             style: TextStyle(
                 color: Style.dashboardSelectedMenu,
                 fontWeight: FontWeight.w400,
@@ -45,7 +45,7 @@ class DashboardScreenTabScreen extends RoutableWidget {
           child: Image(image: AssetImage('assets/images/screen-stl-eg.png'))),
       Row(children: [
         Icon(Icons.lens, color: Style.dashboardSelectedMenu),
-        Text('  ' + Dictionary.kareeModuleScreenStfsTitle.translate(),
+        Text('  ${Dictionary.kareeModuleScreenStfsTitle.translate()}',
             style: TextStyle(
                 color: Style.dashboardSelectedMenu,
                 fontWeight: FontWeight.w400,
@@ -55,7 +55,7 @@ class DashboardScreenTabScreen extends RoutableWidget {
           padding: EdgeInsets.symmetric(vertical: 10),
           child: Column(children: [
             Text(
-              "    " + Dictionary.kareeModuleScreenStfsDetail.translate(),
+              "    ${Dictionary.kareeModuleScreenStfsDetail.translate()}",
               textAlign: TextAlign.justify,
               style: Style.moduleItemDetail,
               textScaleFactor: 1.1,

@@ -27,7 +27,7 @@ class DashboardControllersScreen extends RoutableWidget {
       FittedBox(
           child: Row(children: [
         Icon(Icons.miscellaneous_services, color: Style.dashboardSelectedMenu),
-        Text('  ' + Dictionary.kareeModuleControllerServiceTitle.translate(),
+        Text('  ${Dictionary.kareeModuleControllerServiceTitle.translate()}',
             style: TextStyle(
                 color: Style.dashboardSelectedMenu,
                 fontWeight: FontWeight.w400,
@@ -45,7 +45,7 @@ class DashboardControllersScreen extends RoutableWidget {
           child: Row(children: [
         Icon(Icons.settings_ethernet_rounded,
             color: Style.dashboardSelectedMenu),
-        Text('  ' + Dictionary.kareeModuleControllerVariableTitle.translate(),
+        Text('  ${Dictionary.kareeModuleControllerVariableTitle.translate()}',
             style: TextStyle(
                 color: Style.dashboardSelectedMenu,
                 fontWeight: FontWeight.w400,

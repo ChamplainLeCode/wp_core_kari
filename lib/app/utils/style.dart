@@ -16,7 +16,7 @@ class Style {
 
   static final whiteBackground = Color(0xfff7f7f7);
 
-  static final Color whiteText = Colors.white;
+  static const Color whiteText = Colors.white;
 
   static Color successColor = Color(0xff00a65a);
   static Color warningColor = Color(0xfff39c12);

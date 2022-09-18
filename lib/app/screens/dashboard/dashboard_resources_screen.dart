@@ -23,7 +23,7 @@ class DashboardResourcesScreen extends RoutableWidget {
       FittedBox(
           child: Row(children: [
         Icon(Icons.miscellaneous_services, color: Style.dashboardSelectedMenu),
-        Text('  ' + Dictionary.kareeModuleResourcesConfigTitle.translate(),
+        Text('  ${Dictionary.kareeModuleResourcesConfigTitle.translate()}',
             style: TextStyle(
                 color: Style.dashboardSelectedMenu,
                 fontWeight: FontWeight.w400,
@@ -46,7 +46,7 @@ class DashboardResourcesScreen extends RoutableWidget {
           child: Row(children: [
         Icon(Icons.settings_ethernet_rounded,
             color: Style.dashboardSelectedMenu),
-        Text('  ' + Dictionary.kareeModuleResourcesLocaleTitle.translate(),
+        Text('  ${Dictionary.kareeModuleResourcesLocaleTitle.translate()}',
             style: TextStyle(
                 color: Style.dashboardSelectedMenu,
                 fontWeight: FontWeight.w400,
@@ -67,9 +67,7 @@ class DashboardResourcesScreen extends RoutableWidget {
                     child: Row(children: [
                   Icon(Icons.language, color: Style.dashboardSelectedMenu),
                   Text(
-                      '  ' +
-                          Dictionary.kareeModuleResourcesLocaleStep1
-                              .translate(),
+                      '  ${Dictionary.kareeModuleResourcesLocaleStep1.translate()}',
                       style: TextStyle(
                           color: Style.dashboardSelectedMenu,
                           fontWeight: FontWeight.w400,
@@ -87,9 +85,7 @@ class DashboardResourcesScreen extends RoutableWidget {
                     child: Row(children: [
                   Icon(Icons.translate, color: Style.dashboardSelectedMenu),
                   Text(
-                      '  ' +
-                          Dictionary.kareeModuleResourcesLocaleStep2
-                              .translate(),
+                      '  ${Dictionary.kareeModuleResourcesLocaleStep2.translate()}',
                       style: TextStyle(
                           color: Style.dashboardSelectedMenu,
                           fontWeight: FontWeight.w400,
@@ -108,9 +104,7 @@ class DashboardResourcesScreen extends RoutableWidget {
                     child: Row(children: [
                   Icon(Icons.edit_outlined, color: Style.dashboardSelectedMenu),
                   Text(
-                      '  ' +
-                          Dictionary.kareeModuleResourcesLocaleStep3
-                              .translate(),
+                      '  ${Dictionary.kareeModuleResourcesLocaleStep3.translate()}',
                       style: TextStyle(
                           color: Style.dashboardSelectedMenu,
                           fontWeight: FontWeight.w400,
