@@ -1,6 +1,5 @@
 export 'screens.dart';
 import 'package:karee/core.dart';
-import 'package:payment/payment_module.dart';
 
 ///
 /// Author Champlain Marius Bakop
@@ -14,8 +13,6 @@ void registeredModule() {
   //-------------------------------------------------------//
   //------------- BEGIN MODULE REGISTRATION    ------------//
   //-------------------------------------------------------//
-
-  KareeModuleLoader.load(PaymentModule());
 
   //-------------------------------------------------------//
   //--------------- END MODULE REGISTRATION    ------------//

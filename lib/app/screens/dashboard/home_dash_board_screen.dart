@@ -13,7 +13,7 @@ import 'components/dashboard_side_menu.dart';
 
 /// Generated Karee Screen
 /// @email champlainmarius20@gmail.com
-/// @github ChamplainLeCode
+/// @github [ChamplainLeCode](https://github.com/ChamplainLeCode)
 ///
 ///
 ///

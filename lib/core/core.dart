@@ -11,8 +11,7 @@ import 'extensions/extensions_controllers.dart';
 ///
 /// email champlainmarius20@gmail.com
 ///
-/// github ChamplainLeCode
-///
+/// github [ChamplainLeCode](https://github.com/ChamplainLeCode)
 ///
 
 void initControllerReflectable() {

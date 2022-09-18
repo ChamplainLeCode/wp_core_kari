@@ -6,7 +6,7 @@ import 'package:karee/widgets.dart';
 import 'package:karee/internationalization.dart';
 
 /// Generated Karee Screen
-/// @github ChamplainLeCode
+/// @github [ChamplainLeCode](https://github.com/ChamplainLeCode)
 ///
 /// `DashboardControllersScreen` is set as Screen with name `dashboard_controller`
 class DashboardControllersScreen extends RoutableWidget {

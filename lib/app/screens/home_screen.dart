@@ -8,7 +8,7 @@ import 'package:url_launcher/url_launcher.dart' as launcher;
 /*
  * @Author Champlain Marius Bakop
  * @email champlainmarius20@gmail.com
- * @github ChamplainLeCode
+ * @github [ChamplainLeCode](https://github.com/ChamplainLeCode)
  * 
  */
 

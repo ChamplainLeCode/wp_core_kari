@@ -2,7 +2,7 @@ import 'package:karee/navigation.dart' show RouteMode, screen;
 import 'package:karee/annotations.dart' show Controller, KareeInjector;
 
 /*
- * @github ChamplainLeCode
+ * @github [ChamplainLeCode](https://github.com/ChamplainLeCode)
  * 
  */
 @Controller

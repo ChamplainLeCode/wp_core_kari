@@ -7,7 +7,7 @@ import 'package:karee/internationalization.dart';
 
 /// Generated Karee Screen
 /// @email champlainmarius20@gmail.com
-/// @github ChamplainLeCode
+/// @github [ChamplainLeCode](https://github.com/ChamplainLeCode)
 ///
 ///
 ///

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /*
  * @Author Champlain Marius Bakop
  * @email champlainmarius20@gmail.com
- * @github ChamplainLeCode
+ * @github [ChamplainLeCode](https://github.com/ChamplainLeCode)
  * 
  */
 class Style {

@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 /*
  * @Author Champlain Marius Bakop
  * @Email champlainmarius20@gmail.com
- * @Github ChamplainLeCode
+ * @Github [ChamplainLeCode](https://github.com/ChamplainLeCode)
  * 
  */
 void main() {
