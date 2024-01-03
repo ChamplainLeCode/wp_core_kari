@@ -7,7 +7,6 @@ import '../controllers/home/home_controller.dart';
  * 
  */
 void registeredRoute() {
-  Route.on('/', HomeController.instance.index);
   Route.on('/dashboard', DashBoardController.instance.home);
   Route.on('/dashboard/{menu}', DashBoardController.instance.menuScreen);
 }
