@@ -34,7 +34,7 @@ class DashboardScreenTabScreen extends RoutableWidget {
             Dictionary.kareeModuleScreenStlsDetail.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           )),
       Text(Dictionary.eg.translate()),
       Container(
@@ -58,7 +58,7 @@ class DashboardScreenTabScreen extends RoutableWidget {
               "    ${Dictionary.kareeModuleScreenStfsDetail.translate()}",
               textAlign: TextAlign.justify,
               style: Style.moduleItemDetail,
-              textScaleFactor: 1.1,
+              textScaler: TextScaler.linear(1.1),
             ),
             Container(
                 decoration: BoxDecoration(

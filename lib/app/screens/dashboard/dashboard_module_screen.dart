@@ -52,7 +52,7 @@ class DashboardModuleScreen extends RoutableWidget {
             Dictionary.kareeModuleModuleResourceOf.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           )),
       FittedBox(
           child: Row(children: [
@@ -80,7 +80,7 @@ class DashboardModuleScreen extends RoutableWidget {
             Dictionary.kareeModuleModuleWidgetOf.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           )),
       FittedBox(
           child: Row(children: [
@@ -108,7 +108,7 @@ class DashboardModuleScreen extends RoutableWidget {
             Dictionary.kareeModuleModuleLoad.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           ))
     ]);
   }

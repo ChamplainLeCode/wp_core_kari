@@ -54,7 +54,7 @@ class DashboardConstantsScreen extends RoutableWidget {
             Dictionary.kareeModuleConstantProfileProdDetail.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           )),
       Container(
           decoration: BoxDecoration(
@@ -91,7 +91,7 @@ class DashboardConstantsScreen extends RoutableWidget {
             Dictionary.kareeModuleConstantProfileDevDetail.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           )),
       Container(
           decoration: BoxDecoration(
@@ -129,7 +129,7 @@ class DashboardConstantsScreen extends RoutableWidget {
             Dictionary.kareeModuleConstantErrorScreenNameDetail.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           ))
     ]);
   }

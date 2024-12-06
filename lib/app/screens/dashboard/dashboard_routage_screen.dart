@@ -35,7 +35,7 @@ class DashboardRoutageScreen extends RoutableWidget {
             Dictionary.kareeModuleRoutageUrlDetail.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           )),
       Container(
           decoration: BoxDecoration(
@@ -59,7 +59,7 @@ class DashboardRoutageScreen extends RoutableWidget {
               "    ${Dictionary.kareeModuleRoutageInternalDetail.translate()}",
               textAlign: TextAlign.justify,
               style: Style.moduleItemDetail,
-              textScaleFactor: 1.1,
+              textScaler: TextScaler.linear(1.1),
             ),
             Padding(
                 padding: EdgeInsets.only(left: 20, top: 20),

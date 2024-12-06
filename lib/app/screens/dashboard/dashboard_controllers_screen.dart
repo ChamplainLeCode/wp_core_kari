@@ -39,7 +39,7 @@ class DashboardControllersScreen extends RoutableWidget {
             Dictionary.kareeModuleControllerServiceDetail.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           )),
       FittedBox(
           child: Row(children: [
@@ -57,7 +57,7 @@ class DashboardControllersScreen extends RoutableWidget {
             Dictionary.kareeModuleControllerVariableDetail.translate(),
             textAlign: TextAlign.justify,
             style: Style.moduleItemDetail,
-            textScaleFactor: 1.1,
+            textScaler: TextScaler.linear(1.1),
           )),
     ]);
   }

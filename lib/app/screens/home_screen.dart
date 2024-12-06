@@ -21,8 +21,8 @@ class HomeScreen extends StatefulScreen {
 class _HomeScreenState extends ScreenState<HomeScreen> {
   @override
   Widget builder(BuildContext context) {
-    return WillPopScope(
-        onWillPop: () async => false,
+    return PopScope(
+        child: Scaffold(
         child: Scaffold(
             body: Container(
                 alignment: Alignment.center,
