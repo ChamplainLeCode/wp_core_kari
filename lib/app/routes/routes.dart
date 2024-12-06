@@ -1,6 +1,5 @@
 import 'package:karee/navigation.dart' show Route;
 import '../controllers/dashboard/dash_board_controller.dart';
-import '../controllers/home/home_controller.dart';
 
 /*
  * By Karee

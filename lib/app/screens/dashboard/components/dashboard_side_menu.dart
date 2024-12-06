@@ -11,11 +11,13 @@ import 'package:karee/navigation.dart';
 import 'badge_card.dart';
 
 class DashboardSideMenu extends StatefulComponent {
+  DashboardSideMenu({super.key});
+
   @override
-  _DashboardSideMenuState createState() => _DashboardSideMenuState();
+  DashboardSideMenuState createState() => DashboardSideMenuState();
 }
 
-class _DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
+class DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
   Of<int>? selectedIndexObs;
 
   @override
@@ -74,7 +76,7 @@ class _DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
             ),
             Observer(
               of: selectedIndexObs!,
-              child: (ctx) => Container(
+              builder: (ctx) => Container(
                   decoration: selectedIndexObs!.value == 1
                       ? BoxDecoration(
                           border: Border(
@@ -103,7 +105,7 @@ class _DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
             ),
             Observer(
                 of: selectedIndexObs!,
-                child: (ctx) => Container(
+                builder: (ctx) => Container(
                     decoration: selectedIndexObs!.value == 2
                         ? BoxDecoration(
                             border: Border(
@@ -131,7 +133,7 @@ class _DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
                     ))),
             Observer(
                 of: selectedIndexObs!,
-                child: (ctx) => Container(
+                builder: (ctx) => Container(
                     decoration: selectedIndexObs!.value == 3
                         ? BoxDecoration(
                             border: Border(
@@ -159,7 +161,7 @@ class _DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
                     ))),
             Observer(
                 of: selectedIndexObs!,
-                child: (ctx) => Container(
+                builder: (ctx) => Container(
                     decoration: selectedIndexObs!.value == 4
                         ? BoxDecoration(
                             border: Border(
@@ -187,7 +189,7 @@ class _DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
                     ))),
             Observer(
                 of: selectedIndexObs!,
-                child: (ctx) => Container(
+                builder: (ctx) => Container(
                     decoration: selectedIndexObs!.value == 5
                         ? BoxDecoration(
                             border: Border(
@@ -215,7 +217,7 @@ class _DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
                     ))),
             Observer(
                 of: selectedIndexObs!,
-                child: (ctx) => Container(
+                builder: (ctx) => Container(
                     decoration: selectedIndexObs!.value == 6
                         ? BoxDecoration(
                             border: Border(
@@ -245,7 +247,7 @@ class _DashboardSideMenuState extends ComponentState<DashboardSideMenu> {
                     ))),
             Observer(
                 of: selectedIndexObs!,
-                child: (ctx) => Container(
+                builder: (ctx) => Container(
                     decoration: selectedIndexObs!.value == 7
                         ? BoxDecoration(
                             border: Border(

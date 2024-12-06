@@ -22,6 +22,8 @@ void main() async {
 class MyKareeApp extends StatelessWidget {
   final sideMenuSelected = Of.tag(0, #sideMenu);
 
+  MyKareeApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Don't change this widget
