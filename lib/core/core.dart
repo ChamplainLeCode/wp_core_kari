@@ -31,7 +31,7 @@ Future<void> initCore() async {
   await loadAppConfig();
   initControllerReflectable();
   registeredRoute();
-  registeredModule();
+  await registeredModule();
   if (kDebugMode) {
     print('Initialisation ended');
   }

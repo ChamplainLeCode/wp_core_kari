@@ -10,7 +10,7 @@ import 'package:karee/core.dart';
 /// @Github [ChamplainLeCode](https://github.com/ChamplainLeCode)
 ///
 
-void registeredModule() {
+Future<void> registeredModule() async {
   //-------------------------------------------------------//
   //------------- BEGIN MODULE REGISTRATION    ------------//
   //-------------------------------------------------------//
