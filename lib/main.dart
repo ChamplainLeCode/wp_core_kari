@@ -31,6 +31,7 @@ class MyKareeApp extends StatelessWidget {
     return KareeMaterialApp(
         kind: ApplicationKind.material,
         locale: Locale('fr'),
+        enableI18n: true,
         supportedLocales: [Locale('en')],
         observables: [sideMenuSelected],
 
